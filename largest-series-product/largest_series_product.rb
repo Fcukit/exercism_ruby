@@ -1,3 +1,4 @@
+# O(n) = N
 class Series
   attr_reader :numbers
 
@@ -45,3 +46,16 @@ class Series
     summary
   end
 end
+
+# O(n) = N^2
+#class SeriesTwo
+#  attr_reader :numbers
+#
+#  def initialize(d)
+#    @numbers = d.scan(/\d/).map(&:to_i)
+#  end
+#
+#  def largest_product(x)
+#    numbers.each_cons(x).map { |a| a.inject(:*) }.max
+#  end
+#end
